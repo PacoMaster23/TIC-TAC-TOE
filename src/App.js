@@ -283,12 +283,12 @@ export default function Game() {
             ))}
           </div>
         )}
-      </div>
+      </div>   
     </>
   );
 }
 
-
+// \ Helper function to determine the winner of the game */
 
 function calculateWinner(squares) {
   const lines = [
@@ -298,7 +298,7 @@ function calculateWinner(squares) {
   ];
   for (const [a, b, c] of lines) {
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      return squares[a];
+      return squares[a];  
     }
   }
   return null;
